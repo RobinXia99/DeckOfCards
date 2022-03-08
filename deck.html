@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <span id="create-deck" class="control-button">Create Deck</span>
+        <span id="shuffle" class="control-button">Shuffle</span>
+        <span id="draw" class="control-button">Draw</span>
+        <span id="empty" class="control-button">Empty</span>
+    </div>
+    <table class="cards-table">
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>Card</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody id="cards-table">
+            <tr>
+                <td>1</td>
+                <td>Card</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Card</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Card</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="cards-drawn">0/52</h1>
+    <script src="deck.js"></script>
+</body>
+</html>

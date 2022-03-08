@@ -1,0 +1,133 @@
+
+.cards-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 400px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.cards-table thead tr {
+  background-color: #1E1E2E;
+  color: #fff;
+  text-align: left;
+  font-family: 'Avenir Book';
+}
+
+.cards-table th,
+.cards-table td {
+  padding: 18px;
+}
+
+.cards-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: #F7F7F7;
+}
+
+.cards-table tbody tr:nth-of-type(even) {
+  background-color: #E3E3E3;
+}
+
+.cards-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1E1E2E;
+}
+
+.button-container {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+
+.control-button {
+  background-color: #1E1E2E;
+  width: 115px;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.616);
+}
+
+.control-button:hover {
+  transform: scale(1.05);
+  background-color: #2a2a3a;
+}
+
+.control-button:active {
+  transform: translate3d(3px, 3px, 0px);
+}
+
+#cards-drawn {
+  font-family: 'Avenir Book';
+  font-size: 30px;
+  font-weight: normal;
+  margin: 15px;
+}
+
+
+
+html {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Avenir Book';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    background-color: #E4E4E4;
+  }
+
+  .card {
+    font-family: 'Avenir Book';
+    width: 30px;
+    height: 45px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+  }
+
+  .card aside {
+    font-size: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .card .top {
+    margin: 0.1rem;
+    margin-top: 0.2rem;
+    align-self: flex-start;
+
+  }
+
+  .card .middle {
+    font-size: 9px;
+  }
+
+  .card .bottom {
+    margin: 0.1rem;
+    margin-bottom: 0.2rem;
+    align-self: flex-end;
+    transform: rotate(180deg);
+  }
+
+.spades,
+.clubs {
+  color: black;
+}
+.hearts,
+.diams {
+  color: red;
+}
